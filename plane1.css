@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.map {
+    width: 400px;
+    height: 600px;
+    border: 1px solid black;
+    margin: 50px auto;
+    /* cursor: none;*/
+    position: relative;
+    overflow: hidden;
+}
+
+.bgmap {
+    width: 400px;
+    height: 600px;
+    background: url("../img/bg2.jpg") 0 0 no-repeat;
+    background-size: 100%;
+    position: absolute;
+}
