@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>飞机大战2.0</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #53598c;
+        }
+
+        .bodys {
+            width: 500px;
+            height: 650px;
+            overflow: hidden;
+            margin: 0 auto;
+            position: relative;
+            top: 70px;
+        }
+
+        ul {
+            list-style: none;
+            width: 500px;
+            height: 650px;
+            animation: roll 5s linear 0s infinite normal;
+        }
+
+        ul li {
+            width: 500px;
+            height: 650px;
+            float: left;
+        }
+
+        ul li img {
+            width: 500px;
+            height: 650px;
+        }
+
+        @keyframes roll {
+            from {
+                transform: translateY(-100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+        #title{
+            width: 400px;
+            height: 100px;
+            position: absolute;
+            top: 160px;
+            left: 50px;
+            z-index: 222;
+        }
+        #title p{
+            font-family: "隶书";
+            font-weight: bold;
+            font-size: 50px;
+            text-align: center;
+            line-height: 100px;
+            color: #fff;
+            word-spacing: 20px;
+        }
+
+        #top {
+            width: 200px;
+            height: 100px;
+            margin: 0 auto;
+            position: absolute;
+            top: 470px;
+            left: 150px;
+            z-index: 222;
+        }
+
+        #top a {
+            text-decoration: none;
+
+        }
+
+        #top input[type=button] {
+            width: 200px;
+            height: 100px;
+            background: url("../img/button.png");
+            background-size: 200px 100px;
+            color: #fff;
+            font-family: "宋体";
+            font-size: 27px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+<div class="bodys">
+    <div id="title">
+        <p>飞 机 大 战</p>
+    </div>
+    <div id="top">
+        <a href="../html/plane.html">
+            <input type="button" value="开始游戏">
+        </a>
+    </div>
+    <ul>
+        <li><img src="../img/bg2.jpg" alt=""></li>
+        <li><img src="../img/bg2.jpg" alt=""></li>
+    </ul>
+</div>
+</body>
+</html>
